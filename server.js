@@ -15,4 +15,5 @@ app.use(bdy.json());
 app.use(express.static(__dirname + '/public'));
 require('./app/routes')(app);
 var server=app.listen(port);
+console.log(db.url);
 exports = module.exports = app;

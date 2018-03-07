@@ -2,7 +2,7 @@ var cust = require('./model/customer');
 module.exports = function(app) {
 
     app.get('/api/customers', function(req, res) {
-      cust.find(function(err,cust){
+      cust.find({},function(err,cust){
         if(err){
           res.send(err);
         }
