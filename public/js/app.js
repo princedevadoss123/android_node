@@ -1,2 +1,2 @@
 // Angular Module Information
-angular.module('androidApp',['loginCtrl','ngRoute','appRoutes']);
+angular.module('androidApp',['androidApp.loginCtrl','androidApp.services','ngRoute','appRoutes']);

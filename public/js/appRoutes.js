@@ -1,8 +1,8 @@
 angular.module('appRoutes', [])
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.when('/login', {
-      templateUrl: 'partials/login.html',
-      controller: 'LoginController'
+      templateUrl: 'partials/tableContent.html',
+      controller: 'TableController'
     })
     .otherwise({
       redirectTo: '/'
