@@ -1,0 +1,15 @@
+.loginPageBackground{
+background: url("../images/loginPage.jpg");
+}
+
+.labelColor{
+  color:#007BFF;
+}
+
+.loginHeader{
+  color:white;
+}
+
+.divAlign{
+  margin-top : 15rem;
+}
