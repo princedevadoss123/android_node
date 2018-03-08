@@ -1,14 +1,13 @@
-angular.module('androidApp.services', []).
-  factory('ergastAPIservice', function($http) {
+angular.module('androidApp.services', [])
+  .factory('UserService', function($http) {
+    var userAPI = {};
 
-    var ergastAPI = {};
-
-    ergastAPI.getDrivers = function() {
+    userAPI.getDrivers = function() {
       return $http({
         method: 'GET',
         url: 'api/customers'
       });
     }
-
-    return ergastAPI;
+    
+    return userAPI;
   });

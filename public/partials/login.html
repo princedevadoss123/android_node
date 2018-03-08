@@ -1,0 +1,23 @@
+<!-- Loginview -->
+<section ng-controller="LoginController" ng-init="onInit()">
+  <div class = "divAlign">
+  <div class="col-sm-8 col-sm-push-4">
+      <h2 class = "loginHeader">Login</h2>
+  </div>
+  <div class="col-sm-4 col-sm-pull-8">
+      <form name="loginForm" novalidate>
+          <div class="form-group">
+              <label for="username" class = "labelColor">Username</label>
+              <input ng-model="username" type="text" id="username" name="username" class="form-control" placeholder="Enter username" autofocus="true" autocomplete="off" required>
+          </div>
+          <div class="form-group">
+              <label for="password" class = "labelColor">Password</label>
+              <input ng-model="password" type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+          </div>
+          <div class="form-group">
+              <button class="btn btn-primary">Log In</button>
+          </div>
+      </form>
+  </div>
+</div>
+</section>

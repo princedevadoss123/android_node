@@ -1,10 +1,9 @@
-// Login Controller
-angular.module('androidApp.loginCtrl',[])
-  .controller('TableController',function($scope,ergastAPIservice) {
+// Table Controller
+angular.module('androidApp.tableCtrl',[])
+  .controller('TableController',function($scope,UserService) {
     $scope.onInit = function() {
       $scope.text = 'hello';
-      ergastAPIservice.getDrivers().then(function (response) {
-        //Dig into the responde to get the relevant data
+      UserService.getDrivers().then(function (response) {
         $scope.entries = response.data;
     });
     }
