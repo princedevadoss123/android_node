@@ -1,4 +1,5 @@
 var cust = require('./model/customer');
+var adm = require('./model/admin');
 module.exports = function(app) {
 
     app.get('/api/customers', function(req, res) {
@@ -11,6 +12,18 @@ module.exports = function(app) {
         }
       });
     });
+
+    app.get('/api/admin/:username/:password', function(req, res) {
+      adm.find({username:req.params.username,password:req.params.password},function(err,adm){
+        if(err){
+          res.send(err);
+        }
+        else{
+            res.send(adm);
+        }
+      });
+    });
+
     app.post('/api/customer',function(req,res){
       console.log("hello");
       console.log(req);
