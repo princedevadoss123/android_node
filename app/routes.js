@@ -3,6 +3,23 @@ var adm = require('./model/admin');
 var loc = require('./model/location');
 module.exports = function(app) {
 
+  app.get('/api/customer/:email', function(req, res) {
+    cust.find({email:req.params.email},function(err,cust){
+      if(err){
+        res.send(err);
+      }
+
+      else{
+        if(cust.length > 1){
+          res.send(err);
+        }
+        else {
+            res.send(cust);
+      }
+    };
+  });
+});
+
     app.get('/api/customers', function(req, res) {
       cust.find({},function(err,cust){
         if(err){
@@ -10,6 +27,7 @@ module.exports = function(app) {
         }
         else{
             res.send(cust);
+
         }
       });
     });
