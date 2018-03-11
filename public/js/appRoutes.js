@@ -8,6 +8,10 @@ angular.module('appRoutes', [])
       templateUrl: 'partials/tableContent.html',
       controller: 'TableController'
     })
+    .when('/home',{
+      templateUrl:'partials/home.html',
+      controller:'HomeController'
+    })
     .otherwise({
       redirectTo: '/'
     });
