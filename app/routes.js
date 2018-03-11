@@ -13,7 +13,9 @@ module.exports = function(app) {
         }
       });
     });
-
+    app.get('/error',function(req,res){
+      res.sendfile('./public/error.html');
+    });
     app.get('/api/admin/:username/:password', function(req, res) {
       adm.find({username:req.params.username,password:req.params.password},function(err,adm){
         if(err){
