@@ -1,4 +1,4 @@
-angular.module('androidApp.loginCtrl',[])
+angular.module('login',['login.services'])
   .controller('LoginController',function($scope, AdminService, $window) {
     $scope.onInit = function() {
       $scope.text = 'hello1';

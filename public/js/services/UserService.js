@@ -1,4 +1,4 @@
-angular.module('androidApp.services', [])
+angular.module('customer.services', [])
   .factory('UserService', function($http) {
     var userAPI = {};
 

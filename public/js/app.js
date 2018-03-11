@@ -1,9 +1,8 @@
 // Angular Module Information
 angular.module('androidApp',[
-  'androidApp.loginCtrl',
-  'androidApp.tableCtrl',
-  'androidApp.services',
-  'androidApp.homeCtrl',
+  'login',
+  'customer',
+  'home',
   'ngRoute',
   'appRoutes'
 ]);

@@ -1,5 +1,5 @@
 // Table Controller
-angular.module('androidApp.tableCtrl',[])
+angular.module('customer',['customer.services'])
   .controller('TableController',function($scope,UserService) {
     $scope.onInit = function() {
       $scope.text = 'hello';

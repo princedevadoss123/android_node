@@ -1,4 +1,4 @@
-angular.module('androidApp.services', [])
+angular.module('login.services', [])
   .factory('AdminService', function($http) {
     var adminAPI = {};
 
