@@ -1,8 +1,10 @@
 // Angular Module Information
 angular.module('androidApp',[
   'login',
+  'main',
+  'maps',
+  'deletion',
   'customer',
-  'home',
   'ngRoute',
   'appRoutes'
 ]);

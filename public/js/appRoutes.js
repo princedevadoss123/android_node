@@ -4,13 +4,21 @@ angular.module('appRoutes', [])
       templateUrl: 'partials/login.html',
       controller: 'LoginController'
     })
+    .when('/main',{
+      templateUrl: 'partials/main.html',
+      controller: 'MainController'
+    })
+    .when('/maps',{
+      templateUrl: 'partials/maps.html',
+      controller: 'MapsController'
+    })
+    .when('/deletion',{
+      templateUrl: 'partials/deletion.html',
+      controller: 'DeletionController'
+    })
     .when('/table',{
       templateUrl: 'partials/tableContent.html',
       controller: 'TableController'
-    })
-    .when('/home',{
-      templateUrl:'partials/home.html',
-      controller:'HomeController'
     })
     .otherwise({
       redirectTo: '/'

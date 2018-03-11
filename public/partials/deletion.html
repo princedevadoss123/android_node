@@ -1,0 +1,17 @@
+<!-- Loginview -->
+<section ng-controller="DeletionController" ng-init="onInit()">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th
+    </tr>
+  </thead>
+  <tbody ng-repeat="entry in entries">
+    <tr>
+      <td>{{entry.name}}</td>
+      <td>{{entry.email}}</td>
+    </tr>
+  </tbody>
+</table>
+</section>
