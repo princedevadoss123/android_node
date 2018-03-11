@@ -1,5 +1,6 @@
 var cust = require('./model/customer');
 var adm = require('./model/admin');
+var loc = require('./model/location');
 module.exports = function(app) {
 
     app.get('/api/customers', function(req, res) {
@@ -22,6 +23,13 @@ module.exports = function(app) {
             res.send(adm);
         }
       });
+    });
+    app.post('/api/location', function(req, res) {
+      console.log("hello");
+      console.log(req);
+      loc.insertMany([req.body],function(error, docs) {});
+
+      res.send("SUCCESS");
     });
 
     app.post('/api/customer',function(req,res){
