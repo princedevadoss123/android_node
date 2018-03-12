@@ -2,10 +2,6 @@
 background: url("../resources/images/loginPage.jpg");
 }
 
-.errorPageBackground{
-  background: url("../resources/images/error_page.jpg");
-}
-
 .labelColor{
   color:#007BFF;
 }
@@ -34,3 +30,29 @@ html, body, #map_canvas {
          right: 0;
          left: 0;
      }
+
+.errorPageBackground{
+  background: url("../resources/images/error_page.jpg");
+}
+.tablePageBackground{
+  background-color: rgba(255,255,255,0.7);
+}
+.tableHeader{
+  font-size: 20px;
+}
+.tableData{
+  color: #000055;
+}
+.tablePageHeader{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.tableHeaderColor{
+  background-color: rgba(0,0,10,0.6);
+  color: white;
+}
+.navTabText{
+  color: white;
+}

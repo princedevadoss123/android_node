@@ -1,16 +1,17 @@
 <!-- Loginview -->
 <section ng-controller="TableController" ng-init="onInit()">
-  <table class="table table-striped">
-  <thead>
+  <h2 class="tablePageHeader">Customers</h2>
+  <table class="table table-striped tablePageBackground">
+  <thead class="tableHeader tableHeaderColor">
     <tr>
       <th>Name</th>
-      <th>Email</th
+      <th>Email</th>
     </tr>
   </thead>
   <tbody ng-repeat="entry in entries">
     <tr>
-      <td>{{entry.name}}</td>
-      <td>{{entry.email}}</td>
+      <td class="tableData">{{entry.name}}</td>
+      <td class="tableData">{{entry.email}}</td>
     </tr>
   </tbody>
 </table>
