@@ -6,5 +6,5 @@ angular.module('customer',['customer.services'])
       UserService.getUsers().then(function (response) {
         $scope.entries = response.data;
     });
-    }
+  }
 });

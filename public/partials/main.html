@@ -2,13 +2,16 @@
 <section ng-controller="MainController" ng-init="onInit()">
   <ul class="nav nav-tabs nav-fill">
     <li class="nav-item">
-      <a class="nav-link active navTabText" href="#">Map</a>
+      <a class="nav-link active navTabText" ng-click="switchMap=true;switchTable=false;switchDelete=false">Map</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navTabText" href="#">Customers</a>
+      <a class="nav-link navTabText" ng-click="switchTable=true;switchMap=false;switchDelete=false">Customers</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navTabText" href="#">Delete</a>
+      <a class="nav-link navTabText" ng-click="switchDelete=true;switchTable=false;switchMap=false">Delete</a>
     </li>
   </ul>
+  <div ng-include src="'/partials/maps.html'" ng-show="switchMap" ></div>
+  <div ng-include src="'/partials/tableContent.html'" ng-show="switchTable" ></div>
+  <div ng-include src="'/partials/deletion.html'" ng-show="switchDelete" ></div>
 </section>
