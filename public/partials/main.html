@@ -1,17 +1,14 @@
 <!-- Loginview -->
 <section ng-controller="MainController" ng-init="onInit()">
-  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th
-    </tr>
-  </thead>
-  <tbody ng-repeat="entry in entries">
-    <tr>
-      <td>{{entry.name}}</td>
-      <td>{{entry.email}}</td>
-    </tr>
-  </tbody>
-</table>
+  <ul class="nav nav-tabs nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active navTabText" href="#">Map</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navTabText" href="#">Customers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navTabText" href="#">Delete</a>
+    </li>
+  </ul>
 </section>
