@@ -1,17 +1,9 @@
 <!-- Loginview -->
-<section ng-controller="MapsController" ng-init="onInit()">
-  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th
-    </tr>
-  </thead>
-  <tbody ng-repeat="entry in entries">
-    <tr>
-      <td>{{entry.name}}</td>
-      <td>{{entry.email}}</td>
-    </tr>
-  </tbody>
-</table>
+<section ng-controller="MapsController">
+  <div id = "map_canvas">
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="map.options" bounds="map.bounds">
+          <ui-gmap-markers models="map.markers" options="'options'" coords="'self'" icon="'icon'" zIndex="'zIndex'" optimized="'optimized'">
+          </ui-gmap-markers>
+      </ui-gmap-google-map>
+</div>
 </section>

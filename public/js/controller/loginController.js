@@ -20,7 +20,7 @@ angular.module('login',['login.services'])
              $scope.error = "Incorrect username/password !";
            }
            else {
-             $window.location.href = "/home";
+             $window.location.href = "/main";
            }
         })
         .catch(function(response){
