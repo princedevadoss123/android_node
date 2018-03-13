@@ -1,16 +1,23 @@
 <!-- Loginview -->
 <section ng-controller="DeletionController" ng-init="onInit()">
-  <table class="table table-striped">
-  <thead>
+  <h2 class="tablePageHeader">Customers</h2>
+    <table class="table table-striped tablePageBackground">
+  <thead class="tableHeader tableHeaderColor">
     <tr>
       <th>Name</th>
-      <th>Email</th
+      <th>Email</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody ng-repeat="entry in entries">
     <tr>
-      <td>{{entry.name}}</td>
-      <td>{{entry.email}}</td>
+      <td class="tableData">{{entry.name}}</td>
+      <td class="tableData">{{entry.email}}</td>
+      <td>
+        <button type = "submit" ng-click="GetDetails($index)">
+        <i style="cursor:pointer" class="fa fa-trash" opacity=0.7>
+        </button>
+        </td>
     </tr>
   </tbody>
 </table>
