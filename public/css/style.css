@@ -10,6 +10,30 @@ background: url("../resources/images/loginPage.jpg");
   color:white;
 }
 
+.delete-holder{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  outline: none;
+}
+
+.delete-holder:hover{
+  background: rgba(0,155,255,0.2);
+  border-radius: 25px;
+}
+
+.delete-holder:active{
+  background: rgba(0,155,255,0.5);
+}
+
+.delete-icon{
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 22px;
+
+}
+
+
 .nav li span{
   cursor: pointer;
 }
@@ -40,7 +64,7 @@ background: url("../resources/images/loginPage.jpg");
 .tablePageHeader{
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .tableHeaderColor{
