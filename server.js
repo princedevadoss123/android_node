@@ -3,7 +3,7 @@ var bdy=require('body-parser');
 var mongoose= require('mongoose');
 var app=express();
 var db = require('./config/db');
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 mongoose.connect(db.url,{
   server:{
     socketOptions:{
